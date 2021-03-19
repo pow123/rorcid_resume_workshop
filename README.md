@@ -32,12 +32,12 @@ Information about ORCID data can be found at the following links:
 ❗🔥For the workshop to be successful, the following installations/updates must occur:🔥❗
 - [R](https://www.r-project.org/) must be updated with version 4.0 or later
 - [RStudio](https://rstudio.com/products/rstudio/download/) must be updated with 1.4 or later
-- Install or update tinytex using steps at https://yihui.org/tinytex/r/#debugging
+- Install or update **tinytex** using steps at https://yihui.org/tinytex/r/#debugging
 
 ### Getting Started:
 1. Download the repository from https://github.com/pow123/rorcid_resume_workshop
 2. Unzip the folder.
-3. If you'd like to add your headshot, upload it into the **rorcid_resume_workshop** folder. Make sure to save it as `ProfilePic.jpg`.
+3. If you'd like to add your headshot, upload it into the **rorcid_resume_workshop** folder. Make sure to save with the filename: `ProfilePic.jpg`.
 4. Open RStudio and select “New Project.” Then select “Existing Repository.”
 5. Open the `ORCID-CV.Rmd` file.
 6. Load the following packages:
