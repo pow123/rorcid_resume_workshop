@@ -1,4 +1,4 @@
-# Creating a Resume in RStudio using rorcid
+# Creating a Resume in RStudio using rorcid and ORCID API
 
 ## About the Workshop
 
