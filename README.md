@@ -21,6 +21,8 @@ The following creators are credited for their output which are utilized in this 
 - Mitchell O'Hara-Wild - [vitae R package](https://github.com/mitchelloharawild/vitae)
 
 ---
+
+
 ## Steps
 
 ### Access and Setup:
@@ -34,6 +36,7 @@ Information about ORCID data can be found at the following links:
 - [RStudio](https://rstudio.com/products/rstudio/download/) must be updated with 1.4 or later
 - Install or update **tinytex** using steps at https://yihui.org/tinytex/r/#debugging
 
+
 ### Getting Started:
 1. Download the repository from https://github.com/pow123/rorcid_resume_workshop
 2. Unzip the folder.
@@ -43,12 +46,15 @@ Information about ORCID data can be found at the following links:
 6. Load the following packages:
   * `library(rorcid)`
   * `library(httpuv)`
+
 *For the libraries you need to install, first use `install.packages()` before loading libraries.*
+
 
 ### Updating Your ORCID Profile:
 Visit your ORCID profile and make sure it is up-to-date. You can also use `browse(as.orcid("YourORCID")`, replacing "YourORCID" with your ORCID number in quotes, to open your profile from RStudio.
 
 Make sure to provide education and experience and link your ORCID profile with relevant publications.
+
 
 ### Authenticating with ORCID:
 7. First, make sure you are logged into ORCID.
@@ -69,7 +75,8 @@ Make sure to provide education and experience and link your ORCID profile with r
   # Make sure to include quotation marks.
   ORCID_TOKEN="your_alphanumeric_code"
 ```
-13. Next restart your R session. (How? Go to the menu at the top of RStudio, and select Session--> Restart R.)
+13. Next restart your R session. (How? Go to the menu at the top of RStudio, and select Session &#8594; Restart R.)
+
 
 ### Updating the Resume Template
 The template provided uses the "AwesomeCV" template from the `vitae` R package. After the workshop, you can try different CV options here: https://github.com/mitchelloharawild/vitae/blob/master/README.md
@@ -81,6 +88,7 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
  - `tidyverse`
  - `vitae`
  - `dplyr`
+ 
 *For the libraries you need to install, first use `install.packages()` before loading libraries.*
 
 17. Under both “Education” and “Experience”, there are options to use ORCID metadata or to input your own (see the commented out lines in your `ORCID-CV.Rmd` file).
@@ -90,6 +98,8 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
   - What is occurring: First you store the metadata in a variable (which should appear in your Environment), and then you present it in a table (which should appear in the Rmd file).
 
 20. Once everything runs smoothly, you can Knit the file to create the PDF resume.
+
+
 ---
 
 ## Workshop License
