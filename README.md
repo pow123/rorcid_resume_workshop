@@ -51,7 +51,7 @@ Information about ORCID data can be found at the following links:
 
 
 ### Updating Your ORCID Profile:
-Visit your ORCID profile and make sure it is up-to-date. You can also use `browse(as.orcid("YourORCID")`, replacing "YourORCID" with your ORCID number in quotes, to open your profile from RStudio.
+Visit your ORCID profile and make sure it is up-to-date. You can also use `browse(as.orcid("YourORCID")`, replacing **"YourORCID"** with your ORCID number in quotes, to open your profile from RStudio.
 
 Make sure to provide education and experience and link your ORCID profile with relevant publications.
 
@@ -85,7 +85,7 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
 
 14. To begin updating the info on the resume, make sure you are in the `ORCID-CV.Rmd` file.
 15. Next, input your metadata at the top for name, surname, position, address, phone, email, twitter, linkedin, and about me.
-16. Throughout the file, make sure to replace the given ORCID (AKA: 0000-0001-6229-7514) with your own ID number.
+16. Throughout the file, make sure to replace the given ORCID with your own ID number by searching for **0000-0001-6229-7514** and replacing it.
 17. Load the following libraries now (or load them where they are located in the Rmd file):
  - `rorcid`
  - `tidyverse`
@@ -103,6 +103,7 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
 20. Once everything runs smoothly, you can Knit the file to create the PDF resume.
 
 <a name="myfootnote1"><sup>1</sup></a>: To restart an R session, go to the menu at the top of RStudio, and select Session &#8594; Restart R.
+
 ---
 
 ## Workshop License
