@@ -61,6 +61,7 @@ Make sure to provide education and experience and link your ORCID profile with r
   usethis::edit_r_environ("project")
 ```
   *This is to edit the R environment of this project alone, but you can use “user” instead.*
+  
 11. A new window will open in the text editor which will be called `.REnviron`.
 12. In the new window, write the following:
 ```r
@@ -69,9 +70,29 @@ Make sure to provide education and experience and link your ORCID profile with r
   ORCID_TOKEN="your_alphanumeric_code"
 ```
 13. Next restart your R session. (How? Go to the menu at the top of RStudio, and select Session--> Restart R.)
-14. 
 
+### Updating the Resume Template
+The template provided uses the "AwesomeCV" template from the `vitae` R package. After the workshop, you can try different CV options here: https://github.com/mitchelloharawild/vitae/blob/master/README.md
 
+14. To begin updating the info on the resume, make sure you are in the `ORCID-CV.Rmd` file.
+15. Next, input your metadata at the top for name, surname, position, address, phone, email, twitter, linkedin, and about me.
+16. Load the following libraries now (or load them where they are located in the Rmd file):
+ - `rorcid`
+ - `tidyverse`
+ - `vitae`
+ - `dplyr`
+*For the libraries you need to install, first use `install.packages()` before loading libraries.*
+
+17. Under both “Education” and “Experience”, there are options to use ORCID metadata or to input your own (see the commented out lines in your `ORCID-CV.Rmd` file).
+18. Update the “Languages” and “Skills” sections by replacing the examples with your own details.
+19. Next, I recommend running the R lines to ensure they work. 
+  - Run one line in RStudio by clicking on the line in your file and pressing Ctrl+Enter (or press the “Run” button). For multiple lines, select the block of code before pressing Ctrl+Enter. 
+  - What is occurring: First you store the metadata in a variable (which should appear in your Environment), and then you present it in a table (which should appear in the Rmd file).
+
+20. Once everything runs smoothly, you can Knit the file to create the PDF resume.
+---
+
+## Workshop License
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
