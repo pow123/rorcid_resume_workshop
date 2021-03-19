@@ -1,0 +1,110 @@
+---
+name: InputFirst
+surname: InputLast
+position: "Input Titles or Abbreviations"
+address: "Input Address"
+phone: +1998 765 4321
+profilepic: ProfilePic.jpg
+email: "youremail@address.edu"
+twitter: UsernameOnly
+linkedin: FriendlyURL
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Input a short bio here. Describe yourself in a couple of sentences."
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+```{r}
+#Beware of Latex and the latex packages needed for compiling. See https://yihui.org/tinytex/r/#debugging if you get any errors related to *.tex compiling 
+```
+
+# Education
+
+```{r}
+library(rorcid)
+library(dplyr)
+my_ed <- do.call("bind_rows",
+  rorcid::orcid_educations("0000-0001-6229-7514")$`0000-0001-6229-7514`$`affiliation-group`$summaries
+)
+my_ed %>%
+  detailed_entries(
+    what = `education-summary.role-title`,
+    when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
+    with = `education-summary.organization.name`,
+    where = `education-summary.organization.address.city`
+  )
+# library(tibble)
+# tribble(
+#   ~ Degree, ~ Year, ~ Institution, ~ Where,
+#   "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
+#   "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
+#   "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
+# ) %>% 
+#   detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Work experience
+
+```{r}
+my_exp <- do.call("bind_rows",
+  rorcid::orcid_employments("0000-0001-6229-7514")$`0000-0001-6229-7514`$`affiliation-group`$summaries
+)
+my_exp %>%
+  detailed_entries(
+    what = `employment-summary.role-title`,
+    when = glue::glue("{`employment-summary.start-date.year.value`} - {`employment-summary.end-date.year.value`}"),
+    with = `employment-summary.organization.name`,
+    where = glue::glue("{`employment-summary.organization.address.city`}, {`employment-summary.organization.address.region`}")
+  )
+
+#tribble(
+#  ~ Experience, ~ Year, ~ Institution, ~ Details,
+#  "Current Job Title", "Years of Employment", "Organization", #"Job Description",
+#  "Previous Job Title", "Years of Employment", "Organization", #"Job Description",
+  
+#) %>% 
+#  detailed_entries(Details, Year, Experience, Institution)
+```
+# Languages:
+  
+  * **English**: native language.
+  * **Spanish**: advanced speaking, writing and reading.
+  * **French**: intermediate speaking, writing and reading.
+
+# Skills
+These are some of the skills and knowledge I aquired during my training, education and courses
+
+  * **First overarching skillname**:  
+      List the details, including software, techniques, etc.
+  * **Second overarching skillname**:  
+      List the details, including software, techniques, etc.
+  * **Other informatic tools**:  
+      Microsoft Office; Google Suite; GraphPad Prism; LaTeX; Git; HTML & CSS.
+  * **Public speaking**:  
+      I  have attended and presented my scientific work in several national and international conferences, both orally and in poster format.
+      
+# Publications
+
+```{r}
+library(rorcid)
+library(tidyverse)
+out <- works(orcid_id("0000-0001-6229-7514")) 
+ tibble(
+   Journal = out$`journal-title.value`,
+   Title = out$title.title.value,
+   Year = out$`publication-date.year.value`,
+   DOI = out$url.value
+ ) %>% 
+  detailed_entries(
+  DOI,
+  Journal,
+  Title,
+  Year
+)
+
+```
+
