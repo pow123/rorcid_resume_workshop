@@ -34,7 +34,13 @@ Information about ORCID data can be found at the following links:
 ❗🔥For the workshop to be successful, the following installations/updates must occur:🔥❗
 - [R](https://www.r-project.org/) must be updated with version 4.0 or later
 - [RStudio](https://rstudio.com/products/rstudio/download/) must be updated with 1.4 or later
-- Install or update **tinytex** using steps at https://yihui.org/tinytex/r/#debugging
+- Install or update **tinytex** using the following steps:
+```r
+  # To install tinytex
+  
+ tinytex::install_tinytex()
+```
+  More help and information is available in [this debugging guide](https://yihui.org/tinytex/r/#debugging) and [this StackOverflow answered question](https://stackoverflow.com/questions/58427254/failed-to-compile-test-tex-see-https-yihui-name-tinytex-r-debugging-for-debu).
 
 
 ### Getting Started:
@@ -42,8 +48,9 @@ Information about ORCID data can be found at the following links:
 2. Unzip the folder.
 3. If you'd like to add your headshot, upload it into the **rorcid_resume_workshop** folder. Make sure to save with the filename: `ProfilePic.jpg`.
 4. Open RStudio and select “New Project.” Then select “Existing Repository.”
-5. Open the `ORCID-CV.Rmd` file.
-6. Load the following packages:
+5. Navigate to and select the **rorcid_resume_workshop** directory.
+6. Open the `ORCID-CV.Rmd` file.
+7. Load the following packages:
   * `library(rorcid)`
   * `library(httpuv)`
 
@@ -77,7 +84,7 @@ Make sure to provide education and experience and link your ORCID profile with r
   
   ORCID_TOKEN="your_alphanumeric_code"
 ```
-13. Next restart your R session. <sup>[1](#myfootnote1)</sup>
+13. Next restart your R session. <sup id="a1">[1](#myfootnote1)</sup>
 
 
 ### Updating the Resume Template
@@ -102,7 +109,7 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
 
 20. Once everything runs smoothly, you can Knit the file to create the PDF resume.
 
-<a name="myfootnote1"><sup>1</sup></a>: To restart an R session, go to the menu at the top of RStudio, and select Session &#8594; Restart R.
+<a name="myfootnote1"><sup>1</sup></a> To restart an R session, go to the menu at the top of RStudio, and select Session &#8594; Restart R. [↩](#a1)
 
 ---
 
