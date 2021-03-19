@@ -35,7 +35,7 @@ Information about ORCID data can be found at the following links:
 - Install or update tinytex using steps at https://yihui.org/tinytex/r/#debugging
 
 ### Getting Started:
-1. Download the repository from https://github.com/pow123/pow123-rorcid_resume_workshop
+1. Download the repository from https://github.com/pow123/rorcid_resume_workshop
 2. Unzip the folder.
 3. If you'd like to add your headshot, upload it into the **rorcid_resume_workshop** folder. Make sure to save it as `ProfilePic.jpg`.
 4. Open RStudio and select “New Project.” Then select “Existing Repository.”
