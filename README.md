@@ -63,19 +63,21 @@ Make sure to provide education and experience and link your ORCID profile with r
 10. Next, in the console, load the `usethis` package and modify your Renvironment: 
   ```r
   # Input install.packages("usethis") to install the package first.
+  # Note: The following will edit the R environment of this project alone, but you can use “user” instead.
+  
   library(usethis)
   usethis::edit_r_environ("project")
 ```
-  *This is to edit the R environment of this project alone, but you can use “user” instead.*
   
 11. A new window will open in the text editor which will be called `.REnviron`.
 12. In the new window, write the following:
 ```r
-  # Replace your_alphanumeric_code below with the code you copied before. 
-  # Make sure to include quotation marks.
+  # In the line below, replace your_alphanumeric_code below with the one you copied before. 
+  # ...and make sure to include the quotation marks!
+  
   ORCID_TOKEN="your_alphanumeric_code"
 ```
-13. Next restart your R session. (How? Go to the menu at the top of RStudio, and select Session &#8594; Restart R.)
+13. Next restart your R session. [^1]
 
 
 ### Updating the Resume Template
@@ -99,7 +101,7 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
 
 20. Once everything runs smoothly, you can Knit the file to create the PDF resume.
 
-
+ [^1]: To restart an R session, go to the menu at the top of RStudio, and select Session &#8594; Restart R.
 ---
 
 ## Workshop License
