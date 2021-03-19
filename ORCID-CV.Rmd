@@ -53,6 +53,8 @@ my_ed %>%
 my_exp <- do.call("bind_rows",
   rorcid::orcid_employments("0000-0001-6229-7514")$`0000-0001-6229-7514`$`affiliation-group`$summaries
 )
+
+#For the my_exp variable below: if there is no end date on your recent employment, replace `employment-summary.end-date.year.value` with `employment-summary.end-date`. 
 my_exp %>%
   detailed_entries(
     what = `employment-summary.role-title`,
