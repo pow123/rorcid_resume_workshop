@@ -13,8 +13,6 @@ Peace Ossom-Williamson, Director for Research Data Services, The University of T
 - Website: https://peaceossom.com
 - ORCID: https://orcid.org/0000-0001-6229-7514
 
-### Bio: 
-Peace is the director of research data services and a health sciences liaison at The University of Texas at Arlington. She also teaches Public Health Informatics at UTA. She has experience with technical and public services and research and scholarly communication support including data management planning, finding open educational resources, choosing where to publish, and answering copyright questions. Peace is passionate about public health and data services.
 
 ### Credits: 
 The following creators are credited for their output which are utilized in this workshop:
@@ -27,7 +25,8 @@ The following creators are credited for their output which are utilized in this 
 
 ### Access and Setup:
 Information about ORCID data can be found at the following links:
-- ORCID API Documentation (click “What sections can I read on ORCID record using the API?”) https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/#easy-faq-2361
+- ORCID API Documentation (click “What sections can I read on ORCID record using the API?”) at
+  https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/#easy-faq-2361
 - rorcid walkthrough: https://ciakovx.github.io/rorcid.html 
 
 ❗🔥For the workshop to be successful, the following installations/updates must occur:🔥❗
@@ -44,7 +43,7 @@ Information about ORCID data can be found at the following links:
 6. Load the following packages:
   * `library(rorcid)`
   * `library(httpuv)`
-  *For the libraries you need to install, first use `install.packages()` before loading libraries.*
+*For the libraries you need to install, first use `install.packages()` before loading libraries.*
 
 ### Updating Your ORCID Profile:
 Visit your ORCID profile and make sure it is up-to-date. You can also use `browse(as.orcid("YourORCID")`, replacing "YourORCID" with your ORCID number in quotes, to open your profile from RStudio.
@@ -56,19 +55,19 @@ Make sure to provide education and experience and link your ORCID profile with r
 8. Next, use `orcid_auth()` and a new browser window will open telling you that authentication was successful and to come back to R.
 9. In the console a "Bearer" alphanumeric code will appear. Copy the alphanumeric code.
 10. Next, in the console, load the `usethis` package and modify your Renvironment: 
-  ````
+  ```{r }
   #Input install.packages("usethis") to install the package first.
   library(usethis)
   usethis::edit_r_environ("project")
-  ````
+```
   *This is to edit the R environment of this project alone, but you can use “user” instead.*
 11. A new window will open in the text editor which will be called `.REnviron`.
 12. In the new window, write the following:
-  ````
+```{r }
   # Replace your_alphanumeric_code below with the code you copied before. 
   # Make sure to include quotation marks.
   ORCID_TOKEN="your_alphanumeric_code"
-  ````
+```
 13. Next restart your R session. (How? Go to the menu at the top of RStudio, and select Session--> Restart R.)
 14. 
 
