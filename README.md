@@ -55,15 +55,15 @@ Make sure to provide education and experience and link your ORCID profile with r
 8. Next, use `orcid_auth()` and a new browser window will open telling you that authentication was successful and to come back to R.
 9. In the console a "Bearer" alphanumeric code will appear. Copy the alphanumeric code.
 10. Next, in the console, load the `usethis` package and modify your Renvironment: 
-  ```{r }
-  #Input install.packages("usethis") to install the package first.
+  ```r
+  # Input install.packages("usethis") to install the package first.
   library(usethis)
   usethis::edit_r_environ("project")
 ```
   *This is to edit the R environment of this project alone, but you can use “user” instead.*
 11. A new window will open in the text editor which will be called `.REnviron`.
 12. In the new window, write the following:
-```{r }
+```r
   # Replace your_alphanumeric_code below with the code you copied before. 
   # Make sure to include quotation marks.
   ORCID_TOKEN="your_alphanumeric_code"
