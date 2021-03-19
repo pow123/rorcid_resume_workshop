@@ -46,7 +46,7 @@ Information about ORCID data can be found at the following links:
 
 ### Getting Started:
 1. Download the repository from https://github.com/pow123/rorcid_resume_workshop
-2. Unzip the folder.
+2. Unzip the folder and rename it from **rorcid_resume_workshop-main** to **rorcid_resume_workshop**.
 3. If you'd like to add your headshot, upload it into the **rorcid_resume_workshop** folder. Make sure to save with the filename: `ProfilePic.jpg`.
 4. Open RStudio and select “New Project.” Then select “Existing Repository.”
 5. Navigate to and select the **rorcid_resume_workshop** directory.
