@@ -32,6 +32,10 @@ Information about ORCID data can be found at the following links:
   https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/#easy-faq-2361
 - rorcid walkthrough: https://ciakovx.github.io/rorcid.html 
 
+Other resources:
+- Rmarkdown Cheat Sheet - https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+- About ORCID - https://info.orcid.org/what-is-orcid/
+
 ❗🔥For the workshop to be successful, the following installations/updates must occur:🔥❗
 - [R](https://www.r-project.org/) must be updated with version 4.0 or later
 - [RStudio](https://rstudio.com/products/rstudio/download/) must be updated with 1.4 or later
