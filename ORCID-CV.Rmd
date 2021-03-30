@@ -1,13 +1,13 @@
 ---
-name: InputFirst
-surname: InputLast
+name: "InputFirst"
+surname: "InputLast"
 position: "Input Titles or Abbreviations"
 address: "Input Address"
-phone: +1998 765 4321
-profilepic: ProfilePic.jpg
+phone: "+1998 765 4321"
+profilepic: "ProfilePic.jpg"
 email: "youremail@address.edu"
-twitter: UsernameOnly
-linkedin: FriendlyURL
+twitter: "UsernameOnly"
+linkedin: "FriendlyURL"
 date: "`r format(Sys.time(), '%B %Y')`"
 aboutme: "Input a short bio here. Describe yourself in a couple of sentences."
 output: vitae::awesomecv
