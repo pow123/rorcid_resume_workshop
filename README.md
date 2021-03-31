@@ -112,6 +112,10 @@ The template provided uses the "AwesomeCV" template from the `vitae` R package. 
   - Run one line in RStudio by clicking on the line in your file and pressing Ctrl+Enter (or press the “Run” button). For multiple lines, select the block of code before pressing Ctrl+Enter. 
   - What is occurring: First you store the metadata in a variable (which should appear in your Environment), and then you present it in a table (which should appear in the Rmd file).
 
+| To see a map of arguments: |
+|----------------------------|
+| `view(rorcid::fields)`     |
+
 20. Once everything runs smoothly, you can Knit the file to create the PDF resume.
 
 <a name="myfootnote1"><sup>1</sup></a> To restart an R session, go to the menu at the top of RStudio, and select Session &#8594; Restart R. [↩](#a1)
