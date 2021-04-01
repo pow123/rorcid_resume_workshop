@@ -14,7 +14,7 @@ Peace Ossom-Williamson, Director for Research Data Services, The University of T
 - Website: https://peaceossom.com
 - ORCID: https://orcid.org/0000-0001-6229-7514
 
-**Floaters:** Mark Chalmers, Jennifer Latessa
+**Floaters:** Amy Koshoffer, Mark Chalmers, Jennifer Latessa
 
 ### Credits: 
 The following creators are credited for their output which are utilized in this workshop:
