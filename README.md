@@ -1,5 +1,6 @@
 # Creating a Resume in RStudio using rorcid and ORCID API
 
+** *This file is using github-flavored markdown and should be [viewed in GitHub](https://github.com/pow123/rorcid_resume_workshop/blob/main/README.md)* **
 ## About the Workshop
 
 ### Description:
